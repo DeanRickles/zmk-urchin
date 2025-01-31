@@ -8,8 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-// removed as not required.
-//#include "keymap_italian.h"
+#include "keymap_italian.h"
 
 // Layer definitions
 #define BASE 0
