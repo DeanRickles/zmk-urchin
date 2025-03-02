@@ -4,12 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-// TODO:
-// * Review and remove unused keys and add missing keys.
-// * Write up config on Draw.io
-// * Copy config to this file.
-// * 
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -30,145 +24,145 @@
 // Base Keymap
 // --------------------------------------------------
 // LEFT ROW 1
-#define L00_01 &kp Q
-#define L00_02 &kp W
-#define L00_03 &kp F
-#define L00_04 &kp P
-#define L00_05 &kp B
+#define L00_01 Q
+#define L00_02 W
+#define L00_03 F
+#define L00_04 P
+#define L00_05 B
 // RIGHT ROW 1
-#define L00_06 &kp J
-#define L00_07 &kp L 
-#define L00_08 &kp U
-#define L00_09 &kp Y
-#define L00_10 &kp SINGLE_QUOTE
+#define L00_06 J
+#define L00_07 L 
+#define L00_08 U
+#define L00_09 Y
+#define L00_10 SINGLE_QUOTE
 // LEFT ROW 2
-#define L00_11 &kp A
-#define L00_12 &kp R
-#define L00_13 &kp S
-#define L00_14 &kp T
-#define L00_15 &kp G
+#define L00_11 A
+#define L00_12 R
+#define L00_13 S
+#define L00_14 T
+#define L00_15 G
 // RIGHT ROW 2
-#define L00_16 &kp M
-#define L00_17 &kp N
-#define L00_18 &kp E
-#define L00_19 &kp I
-#define L00_20 &kp O
+#define L00_16 M
+#define L00_17 N
+#define L00_18 E
+#define L00_19 I
+#define L00_20 O
 // LEFT ROW 3
-#define L00_21 &kp Z
-#define L00_22 &kp X
-#define L00_23 &kp C
-#define L00_24 &kp D
-#define L00_25 &kp B
+#define L00_21 Z
+#define L00_22 X
+#define L00_23 C
+#define L00_24 D
+#define L00_25 B
 // RIGHT ROW 3
-#define L00_26 &kp K
-#define L00_27 &kp H
-#define L00_28 &kp COMMA
-#define L00_29 &kp DOT
-#define L00_30 &kp SLASH
+#define L00_26 K
+#define L00_27 H
+#define L00_28 COMMA
+#define L00_29 DOT
+#define L00_30 SLASH
 // LEFT BOTTOM
-#define L00_31 &mo EXT
-#define L00_32 &mt LSHIFT SPACE
+#define L00_31 EXT
+#define L00_32 LSHIFT SPACE
 // RIGHT BOTTOM
-#define L00_33 &kp SPACE
-#define L00_34 &sl SYM
+#define L00_33 SPACE
+#define L00_34 SYM
 
 // --------------------------------------------------
 // SYM Keymap
 // --------------------------------------------------
 // LEFT ROW 1
-#define L01_01 &kp EXCLAMATION
-#define L01_02 &kp DOUBLE_QUOTES
-#define L01_03 &kp LS(N3) // Unsure if POUND exists.
-#define L01_04 &kp DOLLAR
-#define L01_05 &kp PERCENT
+#define L01_01 EXCLAMATION
+#define L01_02 DOUBLE_QUOTES
+#define L01_03 LS(N3) // Unsure if POUND exists.
+#define L01_04 DOLLAR
+#define L01_05 PERCENT
 // RIGHT ROW 1
-#define L01_06 &kp EQUAL
-#define L01_07 &kp GRAVE
-#define L01_08 &kp COLON
-#define L01_09 &kp SEMICOLON
-#define L01_10 &kp PLUS
+#define L01_06 EQUAL
+#define L01_07 GRAVE
+#define L01_08 COLON
+#define L01_09 SEMICOLON
+#define L01_10 PLUS
 // LEFT ROW 2
-#define L01_11 &sk LALT
-#define L01_12 &sk LGUI
-#define L01_13 &sk LSHIFT
-#define L01_14 &sk LCTRL
-#define L01_15 &sk RALT
+#define L01_11 LALT
+#define L01_12 LGUI
+#define L01_13 LSHIFT
+#define L01_14 LCTRL
+#define L01_15 RALT
 // RIGHT ROW 2
-#define L01_16 &kp ASTERISK
-#define L01_17 &kp LPAR
-#define L01_18 &kp LBRC
-#define L01_19 &kp LBKT
-#define L01_20 &kp MINUS
+#define L01_16 ASTERISK
+#define L01_17 LPAR
+#define L01_18 LBRC
+#define L01_19 LBKT
+#define L01_20 MINUS
 // LEFT ROW 3
-#define L01_21 &kp BACKSLASH
-#define L01_22 &kp PIPE
-#define L01_23 &kp HASH
-#define L01_24 &kp TILDE
-#define L01_25 &kp AMPERSAND
+#define L01_21 BACKSLASH
+#define L01_22 PIPE
+#define L01_23 HASH
+#define L01_24 TILDE
+#define L01_25 AMPERSAND
 // RIGHT ROW 3
-#define L01_26 &kp AT_SIGN
-#define L01_27 &kp RPAR
-#define L01_28 &kp RBRC
-#define L01_29 &kp RBKT
-#define L01_30 &kp UNDERSCORE
+#define L01_26 AT_SIGN
+#define L01_27 RPAR
+#define L01_28 RBRC
+#define L01_29 RBKT
+#define L01_30 UNDERSCORE
 // LEFT BOTTOM
-#define L01_31 &none
-#define L01_32 &mo EXT
+//#define L01_31 &none
+#define L01_32 EXT
 // RIGHT BOTTOM
-#define L01_33 &mo NUM
-#define L01_34 &none
+#define L01_33 NUM
+//#define L01_34 &none
 
 // --------------------------------------------------
 // Ext Keymap
 // --------------------------------------------------
 // LEFT ROW 1
-#define L02_01 &kp ESC
-#define L02_02 &none
-#define L02_03 &none
-#define L02_04 &none
-#define L02_05 &kp INSERT
+#define L02_01 ESC
+//#define L02_02 &none
+//#define L02_03 &none
+//#define L02_04 &none
+#define L02_05 INSERT
 // RIGHT ROW 1
-#define L02_06 &kp PAGE_UP
-#define L02_07 &kp HOME
-#define L02_08 &kp UP_ARROW
-#define L02_09 &kp END
-#define L02_10 &kp CAPSLOCK
+#define L02_06 PAGE_UP
+#define L02_07 HOME
+#define L02_08 UP_ARROW
+#define L02_09 END
+#define L02_10 CAPSLOCK
 // LEFT ROW 2
-#define L02_11 &sk LALT
-#define L02_12 &sk LGUI
-#define L02_13 &sk LSHIFT
-#define L02_14 &sk LCTRL
-#define L02_15 &sk RALT
+#define L02_11 LALT
+#define L02_12 LGUI
+#define L02_13 LSHIFT
+#define L02_14 LCTRL
+#define L02_15 RALT
 // RIGHT ROW 2
-#define L02_16 &kp PAGE_DOWN
-#define L02_17 &kp LEFT_ARROW
-#define L02_18 &kp DOWN_ARROW
-#define L02_19 &kp RIGHT_ARROW
-#define L02_20 &kp DELETE
+#define L02_16 PAGE_DOWN
+#define L02_17 LEFT_ARROW
+#define L02_18 DOWN_ARROW
+#define L02_19 RIGHT_ARROW
+#define L02_20 DELETE
 // LEFT ROW 3
-#define L02_21 &kp LC(Z)        // ctrl+z = undo
-#define L02_22 &kp LC(X)        // ctrl+x = cut
-#define L02_23 &kp LC(C)        // ctrl+c = Copy
-#define L02_24 &kp TAB
-#define L02_25 &kp LC(v)        // ctrl+v = Paste
+#define L02_21 LC(Z)        // ctrl+z = undo
+#define L02_22 LC(X)        // ctrl+x = cut
+#define L02_23 LC(C)        // ctrl+c = Copy
+#define L02_24 TAB
+#define L02_25 LC(v)        // ctrl+v = Paste
 // RIGHT ROW 3
-#define L02_26 &kp LC(BACKSPACE)
-#define L02_27 &kp BACKSPACE
-#define L02_28 &none
-#define L02_29 &none
-#define L02_30 &kp PRINTSCREEN
+#define L02_26 LC(BACKSPACE)
+#define L02_27 BACKSPACE
+//#define L02_28 &none
+//#define L02_29 &none
+#define L02_30 PRINTSCREEN
 // LEFT BOTTOM
-#define L02_31 &none
-#define L02_32 &none
+//#define L02_31 &none
+//#define L02_32 &none
 // RIGHT BOTTOM
-#define L02_33 &kp ENTER
-#define L02_34 &mo FNC
+#define L02_33 ENTER
+#define L02_34 FNCV
 
 // --------------------------------------------------
 // Fnc Keymap
 // --------------------------------------------------
 // LEFT ROW 1
-#define L03_01 &bt BT_SEL 0
+  #define L03_01 &bt BT_SEL 0
 #define L03_02 &bt BT_SEL 1
 #define L03_03 &bt BT_SEL 2
 #define L03_04 &bt BT_SEL 3
@@ -205,56 +199,56 @@
 #define L03_30 &BOOTLOADER
 // LEFT BOTTOM
 #define L03_31 &none
-#define L03_32 &
+#define L03_32 &none
 // RIGHT BOTTOM
-#define L03_33 &none
-#define L03_34 &none
+//#define L03_33 &none
+//#define L03_34 &none
 
 // --------------------------------------------------
 // Num Keymap
 // --------------------------------------------------
 // LEFT ROW 1 
-#define L04_01 &kp QUESTION     // ?
-#define L04_02 &kp LESS_THEN    // <
-#define L04_03 &kp GREATER_THEN // >
-#define L04_04 &kp AT_SIGN
-#define L04_05 &kp KP_NUMLOCK
+#define L04_01 QUESTION     // ?
+#define L04_02 LESS_THEN    // <
+#define L04_03 GREATER_THEN // >
+#define L04_04 AT_SIGN
+#define L04_05 KP_NUMLOCK
 // RIGHT ROW 1
-#define L04_06 &kp EQUAL
-#define L04_07 &kp N7
-#define L04_08 &kp N8
-#define L04_09 &kp N9
-#define L04_10 &kp PLUS
+#define L04_06 EQUAL
+#define L04_07 N7
+#define L04_08 N8
+#define L04_09 N9
+#define L04_10 PLUS
 // LEFT ROW 2
-#define L04_11 &sk LALT
-#define L04_12 &sk LGUI
-#define L04_13 &sk LSHIFT
-#define L04_14 &sk LCTRL
-#define L04_15 &sk RALT
+#define L04_11 LALT
+#define L04_12 LGUI
+#define L04_13 LSHIFT
+#define L04_14 LCTRL
+#define L04_15 RALT
 // RIGHT ROW 2
-#define L04_16 &kp ASTERISK
-#define L04_17 &kp N4
-#define L04_18 &kp N5
-#define L04_19 &kp N6
-#define L04_20 &kp MINUS
+#define L04_16 ASTERISK
+#define L04_17 N4
+#define L04_18 N5
+#define L04_19 N6
+#define L04_20 MINUS
 // LEFT ROW 3
-#define L04_21 &none
-#define L04_22 &none
-#define L04_23 &kp TAB
-#define L04_24 &kp BACKSPACE
-#define L04_25 &kp ENTER
+//#define L04_21 &none
+//#define L04_22 &none
+#define L04_23 TAB
+#define L04_24 BACKSPACE
+#define L04_25 ENTER
 // RIGHT ROW 3
-#define L04_26 &kp N0
-#define L04_27 &kp N1
-#define L04_28 &kp N2
-#define L04_29 &kp N3
-#define L04_30 &kp SLASH
+#define L04_26 N0
+#define L04_27 N1
+#define L04_28 N2
+#define L04_29 N3
+#define L04_30 SLASH
 // LEFT BOTTOM
-#define L04_31 &none
-#define L04_32 &none
+//#define L04_31 &none
+//#define L04_32 &none
 // RIGHT BOTTOM
-#define L04_33 &none
-#define L04_34 &none
+//#define L04_33 &none
+//#define L04_34 &none
 
 // ----------------------------------------------------------------------------------------------------
 // Behaviours 
@@ -308,12 +302,14 @@
 			key-positions = <30 31>;
 			bindings = <&mo FNC>;
 		};
+	};
 
+// Was in the Combo section
 //		// internal-left & external-right thumb keys
 //		combo_sym2 {
 //			timeout-ms = <200>;
 //			key-positions = <31 33>;
-//			bindings = <&mo SYM2>;
+//			bindings = <&mo SYM>;
 //		};
 //
 //		// left index & middle fingers (home-row)
@@ -324,7 +320,6 @@
 //			bindings = <&kp LC(SPACE)>;
 //			layers = <BASE>;
 //		};
-	};
 
 // ----------------------------------------------------------------------------------------------------
 // VARIABLE KEYMAPS
@@ -336,60 +331,54 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			L00_01 L00_02 L00_03 L00_04 L00_05   L00_06 L00_07 L00_08 L00_09 L00_10 
-			L00_11 L00_12 L00_13 L00_14 L00_15   L00_16 L00_17 L00_18 L00_19 L00_20 
-			L00_21 L00_22 L00_23 L00_24 L00_25   L00_26 L00_27 L00_28 L00_29 L00_30
-		                          L00_31 L00_32   L00_33 L00_34
+			&kp L00_01 &kp L00_02 %kp L00_03 &kp L00_04 &kp L00_05   &kp L00_06 &kp L00_07 %kp L00_08 &kp L00_09 &kp L00_10 
+			&kp L00_11 &kp L00_12 &kp L00_13 &kp L00_14 &kp L00_15   &kp L00_16 &kp L00_17 &kp L00_18 &kp L00_19 &kp L00_20 
+			&kp L00_21 &kp L00_22 &kp L00_23 &kp L00_24 &kp L00_25   &kp L00_26 &kp L00_27 &kp L00_28 &kp L00_29 &kp L00_30
+	                                     &mo L00_31 &mt L00_32   &kp L00_33 &mo L00_34
 			>;
 		};
 
 		// Numbers and high frequency symbols
 		sym_layer {
-			label = "Sym.";
+			label = "SYM";
 			bindings = <
-			L01_01 L01_02 L01_03 L01_04 L01_05   L01_06 L01_07 L01_08 L01_09 L01_10 
-			L01_11 L01_12 L01_13 L01_14 L01_15   L01_16 L01_17 L01_18 L01_19 L01_20 
-			L01_21 L01_22 L01_23 L01_24 L01_25   L01_26 L01_27 L01_28 L01_29 L01_30
-		                          L01_31 L01_32   L01_33 L01_34
+			&kp L01_01 &kp L01_02 &kp L01_03 &kp L01_04 &kp L01_05   &kp L01_06 &kp L01_07 &kp L01_08 &kp L01_09 &kp L01_10 
+			&sk L01_11 &sk L01_12 &sk L01_13 &sk L01_14 &sk L01_15   &kp L01_16 &kp L01_17 &kp L01_18 &kp L01_19 &kp L01_20 
+			&kp L01_21 &kp L01_22 &kp L01_23 &kp L01_24 &kp L01_25   &kp L01_26 &kp L01_27 &kp L01_28 &kp L01_29 &kp L01_30
+		                                        &none &mo L01_32   &mo L01_33 &none
 			>;
     };
 
 		// Main modifiers and arrow keys
 		ext_layer {
-			label = "Mods";
+			label = "EXT";
 			bindings = <
-			L02_01 L02_02 L02_03 L02_04 L02_05   L02_06 L02_07 L02_08 L02_09 L02_10 
-			L02_11 L02_12 L02_13 L02_14 L02_15   L02_16 L02_17 L02_18 L02_19 L02_20 
-			L02_21 L02_22 L02_23 L02_24 L02_25   L02_26 L02_27 L02_28 L02_29 L02_30
-		                          L02_31 L02_32   L02_33 L02_34
+			&kp L02_01 &none      &none      &none      &kp L02_05   &kp L02_06 &kp L02_07 &kp L02_08 &kp L02_09 &kp L02_10 
+			&sk L02_11 &sk L02_12 &sk L02_13 &sk L02_14 &sk L02_15   &kp L02_16 &kp L02_17 &kp L02_18 &kp L02_19 &kp L02_20 
+			&kp L02_21 &kp L02_22 &kp L02_23 &kp L02_24 &kp L02_25   &kp L02_26 &kp L02_27 &none      &none      &kp L02_30
+		                                   &none      &none        &kp L02_33 &mo L02_34
 			>;
 		};
 
 		// Function keys with modifiers
 		fnc_layer {
-			label = "FRow";
+			label = "FNC";
 			bindings = <
-			L03_01 L03_02 L03_03 L03_04 L03_05   L03_06 L03_07 L03_08 L03_09 L03_10 
-			L03_11 L03_12 L03_13 L03_14 L03_15   L03_16 L03_17 L03_18 L03_19 L03_20 
-			L03_21 L03_22 L03_23 L03_24 L03_25   L03_26 L03_27 L03_28 L03_29 L03_30
-		                          L03_31 L03_32   L03_33 L03_34
+			 &BT L03_01 &bt L03_02 &bt L03_03 &bt L03_04 &kp L03_05   &kp L03_06 &kp L03_07 &kp L03_08 &kp L03_09 &kp L03_10 
+			 &sk L03_11 &sk L03_12 &sk L03_13 &sk L03_14 &kp L03_15   &kp L03_16 &kp L03_17 &kp L03_18 &kp L03_19 &kp L03_20
+			$BOOTLOADER &kp L03_22 &kp L03_23 &kp L03_24 &kp L03_25   &kp L03_26 &kp L03_27 &kp L03_28 &kp L03_29 $BOOTLOADER
+		                                    &none      &none        &none      &none
 			>;
 		};
 
-		settings_layer {
-				label = "Sett.";
-        bindings = <
-        L04_01 L04_02 L04_03 L04_04 L04_05   L04_06 L04_07 L04_08 L04_09 L04_10 
-        L04_11 L04_12 L04_13 L04_14 L04_15   L04_16 L04_17 L04_18 L04_19 L04_20 
-        L04_21 L04_22 L04_23 L04_24 L04_25   L04_26 L04_27 L04_28 L04_29 L04_30
-                                L04_31 L04_32   L04_33 L04_34
+		num_layer {
+			label = "NUM";
+      bindings = <
+			  &kp L04_01 &kp L04_02 &kp L04_03 &kp L04_04 &kp L04_05   &kp L04_06 &kp L04_07 &kp L04_08 &kp L04_09 &kp L04_10 
+			  &sk L04_11 &sk L04_12 &sk L04_13 &sk L04_14 &kp L04_15   &kp L04_16 &kp L04_17 &kp L04_18 &kp L04_19 &kp L04_20
+        &none      &none      &kp L04_23 &kp L04_24 &kp L04_25   &kp L04_26 &kp L04_27 &kp L04_28 &kp L04_29 &kp L04_30
+		                                     &none      &none        &none      &none
         >;
-//				bindings = <
-//				&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &bootloader 
-//				&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
-//				&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
-//										&none &none                         &none &none 
-//				>;
 		};
 	};
 };
