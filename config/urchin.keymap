@@ -20,134 +20,245 @@
 #define SYM 1       // SYMBOL PRIMARY
 #define EXT 2       // MODIFIERS | MOBILITY
 #define FNC 3       // FUNCTIONS
-#define SYM2 4      // SYMBOL SECONDARY
-#define ACCENT 5    // Remove, Not needed. 
-#define SETTINGS 6  // BT, Possibly move to a differnt area.
-// -----------------
+#define NUM 4      // SYMBOL SECONDARY
 
-// Italian keymap
-// TODO: remove once replace.
-// Row 1
-#define IT_BSLH GRAVE            // backslash
-#define IT_SQUOT MINUS           // '
-#define IT_IGRV EQUAL            // ì
+// ----------------------------------------------------------------------------------------------------
+// Keymap - Variable Keys
+// ----------------------------------------------------------------------------------------------------
 
-// Row 2
-#define IT_EGRV LBKT             // è
-#define IT_PLUS SLASH            // +
-
-
-// Row 3
-#define IT_OGRV SEMI             // ò
-#define IT_AGRV APOS             // à
-#define IT_UGRV NON_US_HASH      // ù
-
-// Row 4
-#define IT_LESS NON_US_BSLH      // <
-#define IT_MINUS RBKT            // -
-
-
-// Shifted symbols
-// Row 1
-#define IT_PIPE LS(GRAVE)        // |
-#define IT_EXCL LS(N1)           // !
-#define IT_DQUOT LS(N2)          // "
-#define IT_PND LS(N3)            // £
-#define IT_USD LS(N4)            // $
-#define IT_PERC LS(N5)           // %
-#define IT_AND LS(N6)            // &
-#define IT_FSLH LS(N7)           // /
-#define IT_LPAR LS(N8)           // (
-#define IT_RPAR LS(N9)           // )
-#define IT_EQL LS(N0)            // =
-#define IT_QUES LS(MINUS)        // ?
-#define IT_CARET LS(EQUAL)       // ^
-
-// Row 2
-#define IT_EACU LS(LBKT)         // é
-#define IT_AST LS(RBKT)          // *
-
-// Row 3
-#define IT_CCED LS(SEMI)         // ç
-#define IT_DEG LS(APOS)          // °
-#define IT_SECT LS(NON_US_HASH)  // §
-
-// Row 4
-#define IT_GREAT LS(NON_US_BSLH) // >
-#define IT_UNDER LS(SLASH)       // _
-
-
-
-// AltGr symbols
-// Row 2
-#define IT_EUR RA(E)             // €
-#define IT_LBKT RA(LBKT)         // [
-#define IT_RBKT RA(RBKT)         // ]
-
-// Row 3
-#define IT_AT RA(SEMI)           // @
-#define IT_HASH RA(APOS)         // #
-
-
-// Shift+Alt symbols
-// Row 2
-#define IT_LBRC LS(RA(LBKT))     // {
-#define IT_RBRC LS(RA(RBKT))     // }
-
-
-// Old Personalised Specials
-#define IT_BKTK RA(MINUS)        // `
-#define IT_TILDE RA(EQUAL)       // ~
-#define IT_CEGR RA(LS(E))        // È
-// -----------------
-
-
-
+// --------------------------------------------------
 // Base Keymap
-// LEFT ROW 1 
-#define BASE_01 &kp Q
-#define BASE_02 &kp W
-#define BASE_03 &kp E
-#define BASE_04 &kp R
-#define BASE_05 &kp T
+// --------------------------------------------------
+// LEFT ROW 1
+#define L00_01 &kp Q
+#define L00_02 &kp W
+#define L00_03 &kp F
+#define L00_04 &kp P
+#define L00_05 &kp B
 // RIGHT ROW 1
-#define BASE_06 &kp Y
-#define BASE_07 &kp U 
-#define BASE_08 &kp I
-#define BASE_09 &kp O 
-#define BASE_10 &kp P 
+#define L00_06 &kp J
+#define L00_07 &kp L 
+#define L00_08 &kp U
+#define L00_09 &kp Y
+#define L00_10 &kp SINGLE_QUOTE
 // LEFT ROW 2
-#define BASE_11 &kp A
-#define BASE_12 &kp S 
-#define BASE_13 &kp D 
-#define BASE_14 &kp F 
-#define BASE_15 &kp G 
+#define L00_11 &kp A
+#define L00_12 &kp R
+#define L00_13 &kp S
+#define L00_14 &kp T
+#define L00_15 &kp G
 // RIGHT ROW 2
-#define BASE_16 &kp H 
-#define BASE_17 &kp J 
-#define BASE_18 &kp K 
-#define BASE_19 &kp L 
-#define BASE_20 &kp IT_OGRV
+#define L00_16 &kp M
+#define L00_17 &kp N
+#define L00_18 &kp E
+#define L00_19 &kp I
+#define L00_20 &kp O
 // LEFT ROW 3
-#define BASE_21 &kp Z 
-#define BASE_22 &kp X 
-#define BASE_23 &kp C 
-#define BASE_24 &kp V 
-#define BASE_25 &kp B 
+#define L00_21 &kp Z
+#define L00_22 &kp X
+#define L00_23 &kp C
+#define L00_24 &kp D
+#define L00_25 &kp B
 // RIGHT ROW 3
-#define BASE_26 &kp N 
-#define BASE_27 &kp M 
-#define BASE_28 &kp COMMA 
-#define BASE_29 &kp DOT 
-#define BASE_30 &kp IT_UGRV 
+#define L00_26 &kp K
+#define L00_27 &kp H
+#define L00_28 &kp COMMA
+#define L00_29 &kp DOT
+#define L00_30 &kp SLASH
 // LEFT BOTTOM
-#define BASE_31 &mo EXT 
-#define BASE_32 &qt LSHIFT space
+#define L00_31 &mo EXT
+#define L00_32 &mt LSHIFT SPACE
 // RIGHT BOTTOM
-#define BASE_33 $kp scape
-#define BASE_34 &sl SYM
-// -----------------
+#define L00_33 &kp SPACE
+#define L00_34 &sl SYM
 
+// --------------------------------------------------
+// SYM Keymap
+// --------------------------------------------------
+// LEFT ROW 1
+#define L01_01 &kp EXCLAMATION
+#define L01_02 &kp DOUBLE_QUOTES
+#define L01_03 &kp LS(N3) // Unsure if POUND exists.
+#define L01_04 &kp DOLLAR
+#define L01_05 &kp PERCENT
+// RIGHT ROW 1
+#define L01_06 &kp EQUAL
+#define L01_07 &kp GRAVE
+#define L01_08 &kp COLON
+#define L01_09 &kp SEMICOLON
+#define L01_10 &kp PLUS
+// LEFT ROW 2
+#define L01_11 &sk LALT
+#define L01_12 &sk LGUI
+#define L01_13 &sk LSHIFT
+#define L01_14 &sk LCTRL
+#define L01_15 &sk RALT
+// RIGHT ROW 2
+#define L01_16 &kp ASTERISK
+#define L01_17 &kp LPAR
+#define L01_18 &kp LBRC
+#define L01_19 &kp LBKT
+#define L01_20 &kp MINUS
+// LEFT ROW 3
+#define L01_21 &kp BACKSLASH
+#define L01_22 &kp PIPE
+#define L01_23 &kp HASH
+#define L01_24 &kp TILDE
+#define L01_25 &kp AMPERSAND
+// RIGHT ROW 3
+#define L01_26 &kp AT_SIGN
+#define L01_27 &kp RPAR
+#define L01_28 &kp RBRC
+#define L01_29 &kp RBKT
+#define L01_30 &kp UNDERSCORE
+// LEFT BOTTOM
+#define L01_31 &none
+#define L01_32 &mo EXT
+// RIGHT BOTTOM
+#define L01_33 &mo NUM
+#define L01_34 &none
+
+// --------------------------------------------------
+// Ext Keymap
+// --------------------------------------------------
+// LEFT ROW 1
+#define L02_01 &kp ESC
+#define L02_02 &none
+#define L02_03 &none
+#define L02_04 &none
+#define L02_05 &kp INSERT
+// RIGHT ROW 1
+#define L02_06 &kp PAGE_UP
+#define L02_07 &kp HOME
+#define L02_08 &kp UP_ARROW
+#define L02_09 &kp END
+#define L02_10 &kp CAPSLOCK
+// LEFT ROW 2
+#define L02_11 &sk LALT
+#define L02_12 &sk LGUI
+#define L02_13 &sk LSHIFT
+#define L02_14 &sk LCTRL
+#define L02_15 &sk RALT
+// RIGHT ROW 2
+#define L02_16 &kp PAGE_DOWN
+#define L02_17 &kp LEFT_ARROW
+#define L02_18 &kp DOWN_ARROW
+#define L02_19 &kp RIGHT_ARROW
+#define L02_20 &kp DELETE
+// LEFT ROW 3
+#define L02_21 &kp LC(Z)        // ctrl+z = undo
+#define L02_22 &kp LC(X)        // ctrl+x = cut
+#define L02_23 &kp LC(C)        // ctrl+c = Copy
+#define L02_24 &kp TAB
+#define L02_25 &kp LC(v)        // ctrl+v = Paste
+// RIGHT ROW 3
+#define L02_26 &kp LC(BACKSPACE)
+#define L02_27 &kp BACKSPACE
+#define L02_28 &none
+#define L02_29 &none
+#define L02_30 &kp PRINTSCREEN
+// LEFT BOTTOM
+#define L02_31 &none
+#define L02_32 &none
+// RIGHT BOTTOM
+#define L02_33 &kp ENTER
+#define L02_34 &mo FNC
+
+// --------------------------------------------------
+// Fnc Keymap
+// --------------------------------------------------
+// LEFT ROW 1
+#define L03_01 &bt BT_SEL 0
+#define L03_02 &bt BT_SEL 1
+#define L03_03 &bt BT_SEL 2
+#define L03_04 &bt BT_SEL 3
+#define L03_05 &kp C_BRIGHTNESS_INC
+// RIGHT ROW 1
+#define L03_06 &kp F6
+#define L03_07 &kp F7
+#define L03_08 &kp F8
+#define L03_09 &kp F9
+#define L03_10 &BT BT_CLR       // Clear BT profile
+// LEFT ROW 2
+#define L03_11 &sk LALT
+#define L03_12 &sk LGUI
+#define L03_13 &sk LSHIFT
+#define L03_14 &sk LCTRL
+#define L03_15 &kp C_BRIGHTNESS_DEC
+// RIGHT ROW 2
+#define L03_16 &kp F11
+#define L03_17 &kp F4
+#define L03_18 &kp F5
+#define L03_19 &kp F6
+#define L03_20 &kp SCROLLLOCK
+// LEFT ROW 3
+#define L03_21 &BOOTLOADER
+#define L03_22 &kp C_VOLUME_DOWN
+#define L03_23 &kp C_MUTE
+#define L03_24 &kp C_VOLUME_UP
+#define L03_25 &kp ENTER
+// RIGHT ROW 3
+#define L03_26 &kp F10
+#define L03_27 &kp F1
+#define L03_28 &kp F2
+#define L03_29 &kp F3
+#define L03_30 &BOOTLOADER
+// LEFT BOTTOM
+#define L03_31 &none
+#define L03_32 &
+// RIGHT BOTTOM
+#define L03_33 &none
+#define L03_34 &none
+
+// --------------------------------------------------
+// Num Keymap
+// --------------------------------------------------
+// LEFT ROW 1 
+#define L04_01 &kp QUESTION     // ?
+#define L04_02 &kp LESS_THEN    // <
+#define L04_03 &kp GREATER_THEN // >
+#define L04_04 &kp AT_SIGN
+#define L04_05 &kp KP_NUMLOCK
+// RIGHT ROW 1
+#define L04_06 &kp EQUAL
+#define L04_07 &kp N7
+#define L04_08 &kp N8
+#define L04_09 &kp N9
+#define L04_10 &kp PLUS
+// LEFT ROW 2
+#define L04_11 &sk LALT
+#define L04_12 &sk LGUI
+#define L04_13 &sk LSHIFT
+#define L04_14 &sk LCTRL
+#define L04_15 &sk RALT
+// RIGHT ROW 2
+#define L04_16 &kp ASTERISK
+#define L04_17 &kp N4
+#define L04_18 &kp N5
+#define L04_19 &kp N6
+#define L04_20 &kp MINUS
+// LEFT ROW 3
+#define L04_21 &none
+#define L04_22 &none
+#define L04_23 &kp TAB
+#define L04_24 &kp BACKSPACE
+#define L04_25 &kp ENTER
+// RIGHT ROW 3
+#define L04_26 &kp N0
+#define L04_27 &kp N1
+#define L04_28 &kp N2
+#define L04_29 &kp N3
+#define L04_30 &kp SLASH
+// LEFT BOTTOM
+#define L04_31 &none
+#define L04_32 &none
+// RIGHT BOTTOM
+#define L04_33 &none
+#define L04_34 &none
+
+// ----------------------------------------------------------------------------------------------------
+// Behaviours 
+// ----------------------------------------------------------------------------------------------------
 
 &sk {
 	// don't release mods on other mods presses
@@ -188,29 +299,36 @@
 		combo_accent {
 			timeout-ms = <200>;
 			key-positions = <32 33>;
-			bindings = <&mo ACCENT>;
+			bindings = <&mo NUM>;
 		};
-		// internal-left & external-right thumb keys
-		combo_sym2 {
-			timeout-ms = <200>;
-			key-positions = <31 33>;
-			bindings = <&mo SYM2>;
-		};
+
 		// both left thumb keys
 		combo_settings {
 			timeout-ms = <200>;
 			key-positions = <30 31>;
-			bindings = <&mo SETTINGS>;
+			bindings = <&mo FNC>;
 		};
-		// left index & middle fingers (home-row)
-		// hold control & space for Adobe workflow
-		combo_ctrl_space {
-			timeout-ms = <200>;
-			key-positions = <12 13>;
-			bindings = <&kp LC(SPACE)>;
-			layers = <BASE>;
-		};
+
+//		// internal-left & external-right thumb keys
+//		combo_sym2 {
+//			timeout-ms = <200>;
+//			key-positions = <31 33>;
+//			bindings = <&mo SYM2>;
+//		};
+//
+//		// left index & middle fingers (home-row)
+//		// hold control & space for Adobe workflow
+//		combo_ctrl_space {
+//			timeout-ms = <200>;
+//			key-positions = <12 13>;
+//			bindings = <&kp LC(SPACE)>;
+//			layers = <BASE>;
+//		};
 	};
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLE KEYMAPS
+// ----------------------------------------------------------------------------------------------------
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -218,10 +336,10 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			BASE_01 BASE_02 BASE_03 BASE_04 BASE_05   BASE_06 BASE_07 BASE_08 BASE_09 BASE_10 
-			&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp IT_OGRV
-			&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp IT_UGRV
-							&mo EXT &qt LSHIFT SPACE           &kp SPACE &sl SYM
+			L00_01 L00_02 L00_03 L00_04 L00_05   L00_06 L00_07 L00_08 L00_09 L00_10 
+			L00_11 L00_12 L00_13 L00_14 L00_15   L00_16 L00_17 L00_18 L00_19 L00_20 
+			L00_21 L00_22 L00_23 L00_24 L00_25   L00_26 L00_27 L00_28 L00_29 L00_30
+		                          L00_31 L00_32   L00_33 L00_34
 			>;
 		};
 
@@ -229,21 +347,21 @@
 		sym_layer {
 			label = "Sym.";
 			bindings = <
-			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp IT_LESS &kp IT_USD &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT  &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
-			&kp IT_GREAT &kp IT_PERC &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT 	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
-														&mo FNC  &mo SYM2       &trans &trans
+			L01_01 L01_02 L01_03 L01_04 L01_05   L01_06 L01_07 L01_08 L01_09 L01_10 
+			L01_11 L01_12 L01_13 L01_14 L01_15   L01_16 L01_17 L01_18 L01_19 L01_20 
+			L01_21 L01_22 L01_23 L01_24 L01_25   L01_26 L01_27 L01_28 L01_29 L01_30
+		                          L01_31 L01_32   L01_33 L01_34
 			>;
-		};
+    };
 
 		// Main modifiers and arrow keys
 		ext_layer {
 			label = "Mods";
 			bindings = <
-			&kp ESC  &kp C_PREV &kp C_PP  &kp C_NEXT  &kp C_PAUSE    	&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
-			&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
-			&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans &trans  &trans
-																		&trans &kp LCTRL    &kp ENTER  &mo FNC 
+			L02_01 L02_02 L02_03 L02_04 L02_05   L02_06 L02_07 L02_08 L02_09 L02_10 
+			L02_11 L02_12 L02_13 L02_14 L02_15   L02_16 L02_17 L02_18 L02_19 L02_20 
+			L02_21 L02_22 L02_23 L02_24 L02_25   L02_26 L02_27 L02_28 L02_29 L02_30
+		                          L02_31 L02_32   L02_33 L02_34
 			>;
 		};
 
@@ -251,45 +369,27 @@
 		fnc_layer {
 			label = "FRow";
 			bindings = <
-			&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
-			&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-			&none &none &none &none &none				          &none &none &none &none &none 
-							  &none &none              &none &none  
+			L03_01 L03_02 L03_03 L03_04 L03_05   L03_06 L03_07 L03_08 L03_09 L03_10 
+			L03_11 L03_12 L03_13 L03_14 L03_15   L03_16 L03_17 L03_18 L03_19 L03_20 
+			L03_21 L03_22 L03_23 L03_24 L03_25   L03_26 L03_27 L03_28 L03_29 L03_30
+		                          L03_31 L03_32   L03_33 L03_34
 			>;
 		};
 
-		// Low frequency symbols.
-		symbols_2_layer {
-			label = "Sym.2";
-			bindings = <
-			&kp IT_CARET &kp IT_UNDER &kp IT_PND &kp IT_EUR &kp IT_HASH         &none &none &none &none &none 
-			&kp IT_BKTK &kp IT_TILDE &kp IT_BSLH &kp IT_PIPE &kp IT_AND         &none &none &none &none &none
-			&none 			&none 			 &kp IT_SECT &kp IT_CCED &kp IT_DEG				  &none &none &none &none &none
-																	&none &none        	&none &none 
-			>;
-		};
-
-		// Used to type regional accents.I
-    // TODO: Remove this layer.
-		accent_layer {
-			label = "Accent";
-			bindings = <
-			&none &none &none &none &none                         &none &none &none &none &none 
-			&none &none &none &none &none                         &none &none &none &none &none
-			&none &none &none &none &none                         &none &none &none &none &none
-			                  &none &none                         &none &none 
-			>;
-		};
-
-		// Used to change the keyboard's settings.
 		settings_layer {
 				label = "Sett.";
-				bindings = <
-				&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &bootloader 
-				&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
-				&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
-										&none &none                         &none &none 
-				>;
+        bindings = <
+        L04_01 L04_02 L04_03 L04_04 L04_05   L04_06 L04_07 L04_08 L04_09 L04_10 
+        L04_11 L04_12 L04_13 L04_14 L04_15   L04_16 L04_17 L04_18 L04_19 L04_20 
+        L04_21 L04_22 L04_23 L04_24 L04_25   L04_26 L04_27 L04_28 L04_29 L04_30
+                                L04_31 L04_32   L04_33 L04_34
+        >;
+//				bindings = <
+//				&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &bootloader 
+//				&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
+//				&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
+//										&none &none                         &none &none 
+//				>;
 		};
 	};
 };
