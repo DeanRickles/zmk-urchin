@@ -113,7 +113,7 @@
 			bindings = <
 			&kp EXCL  &kp DQT   &kp LC(N3) &kp DLLR   &kp PRCNT           &kp EQUAL &kp GRAVE &kp COLON &kp SEMI &kp PLUS
 			&sk LALT  &sk LGUI  &sk LSHIFT &sk LCTRL  &sk RALT            &kp STAR  &kp LPAR  &kp LBRC  &kp LBKT &kp MINUS
-			&kp BSHL  &kp PIPE  &kp HASH   &kp TILDE  &kp AMPS            &kp AT    &kp RPAR  &kp RBRC  &kp RBKT &kp UNDER
+			&kp BSLH  &kp PIPE  &kp HASH   &kp TILDE  &kp AMPS            &kp AT    &kp RPAR  &kp RBRC  &kp RBKT &kp UNDER
 		                                 &none      &mo EXT             &mo NUM   &none
 			>;
     };
