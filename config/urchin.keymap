@@ -21,52 +21,6 @@
 // ----------------------------------------------------------------------------------------------------
 
 // --------------------------------------------------
-// Base Keymap
-// --------------------------------------------------
-// LEFT ROW 1
-#define L00_01 Q
-#define L00_02 W
-#define L00_03 F
-#define L00_04 P
-#define L00_05 B
-// RIGHT ROW 1
-#define L00_06 J
-#define L00_07 L 
-#define L00_08 U
-#define L00_09 Y
-#define L00_10 SINGLE_QUOTE
-// LEFT ROW 2
-#define L00_11 A
-#define L00_12 R
-#define L00_13 S
-#define L00_14 T
-#define L00_15 G
-// RIGHT ROW 2
-#define L00_16 M
-#define L00_17 N
-#define L00_18 E
-#define L00_19 I
-#define L00_20 O
-// LEFT ROW 3
-#define L00_21 Z
-#define L00_22 X
-#define L00_23 C
-#define L00_24 D
-#define L00_25 B
-// RIGHT ROW 3
-#define L00_26 K
-#define L00_27 H
-#define L00_28 COMMA
-#define L00_29 DOT
-#define L00_30 SLASH
-// LEFT BOTTOM
-#define L00_31 EXT
-#define L00_32 LSHIFT SPACE
-// RIGHT BOTTOM
-#define L00_33 SPACE
-#define L00_34 SYM
-
-// --------------------------------------------------
 // SYM Keymap
 // --------------------------------------------------
 // LEFT ROW 1
@@ -331,10 +285,10 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&kp L00_01 &kp L00_02 %kp L00_03 &kp L00_04 &kp L00_05   &kp L00_06 &kp L00_07 %kp L00_08 &kp L00_09 &kp L00_10 
-			&kp L00_11 &kp L00_12 &kp L00_13 &kp L00_14 &kp L00_15   &kp L00_16 &kp L00_17 &kp L00_18 &kp L00_19 &kp L00_20 
-			&kp L00_21 &kp L00_22 &kp L00_23 &kp L00_24 &kp L00_25   &kp L00_26 &kp L00_27 &kp L00_28 &kp L00_29 &kp L00_30
-	                                     &mo L00_31 &mt L00_32   &kp L00_33 &mo L00_34
+			&kp Q      &kp W      %kp F     &kp P      &kp B          &kp J      &kp L      %kp U      &kp Y      &kp SINGLE_QUOTE
+			&kp A      &kp R      &kp S     &kp T      &kp G          &kp M      &kp N      &kp E      &kp I      &kp O 
+			&kp Z      &kp X      &kp C     &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH 
+	                                    &mo EXT &mt LSHIFT SPACE  &kp SPACE &mo SYM
 			>;
 		};
 
