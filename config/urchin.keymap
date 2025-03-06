@@ -10,11 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // Layer definitions
-#define BASE 0      // ALPHA
-#define SYM 1       // SYMBOL PRIMARY
-#define EXT 2       // MODIFIERS | MOBILITY
-#define FNC 3       // FUNCTIONS
-#define NUM 4      // SYMBOL SECONDARY
+#define BASE 0    // ALPHA
+#define SYM 1     // SYMBOL PRIMARY
+#define EXT 2     // MODIFIERS | MOBILITY
+#define FNC 3     // FUNCTIONS
+#define NUM 4     // SYMBOL SECONDARY
+#define MOV 5     // MOUSE MOVEMENTS
 
 
 // ----------------------------------------------------------------------------------------------------
@@ -68,18 +69,18 @@
 		combo_accent {
 			timeout-ms = <200>;
 			key-positions = <32 33>;
-			bindings = <&mo NUM>;
+			bindings = <&mo SYM>;
 		};
 
+		// internal-left & external-right thumb keys
+		combo_sym2 {
+			timeout-ms = <200>;
+			key-positions = <31 33>;
+			bindings = <&mo MOV>;
+		};
 	};
 
 // Was in the Combo section
-//		// internal-left & external-right thumb keys
-//		combo_sym2 {
-//			timeout-ms = <200>;
-//			key-positions = <31 33>;
-//			bindings = <&mo SYM>;
-//		};
 //
 //		// left index & middle fingers (home-row)
 //		// hold control & space for Adobe workflow
@@ -104,7 +105,7 @@
 //     ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡      ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡ 
 			  &kp Z         &kp X         &kp C         &kp D         &kp V                &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH 
 //     ╘═════════════╧═════════════╧═════════════╪═════════════╪═════════════╡      ╞═════════════╪═════════════╪═════════════╧═════════════╧═════════════╛ 
-	                                                &mo EXT      &mt LSHIFT SPACE      &kp SPACE     &mo SYM
+	                                                &mo EXT      &mt LSHIFT SPACE      &kt SPACE     &mo NUM
 //                                               ╘═════════════╧═════════════╛      ╘═════════════╧═════════════╛ 
 			>;
 		};
@@ -136,7 +137,7 @@
 //     ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡      ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡ 
 			  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp TAB       &kp LC(V)            &kp LC(BSPC)  &kp BSPC      &none         &none         &kp PSCRN
 //     ╘═════════════╧═════════════╧═════════════╪═════════════╪═════════════╡      ╞═════════════╪═════════════╪═════════════╧═════════════╧═════════════╛ 
-		                                              &none         &none                &kp ENTER     &mo FNC
+		                                              &none         &none                &kp ENTER     &mo SYM
 //                                               ╘═════════════╧═════════════╛      ╘═════════════╧═════════════╛ 
 			>;
 		};
@@ -170,6 +171,22 @@
 //     ╘═════════════╧═════════════╧═════════════╪═════════════╪═════════════╡      ╞═════════════╪═════════════╪═════════════╧═════════════╧═════════════╛ 
 		                                              &none         &none                &none         &none
 //                                               ╘═════════════╧═════════════╛      ╘═════════════╧═════════════╛ 
+        >;
+		};
+		
+
+    MOV_layer {
+			label = "MOV";
+      bindings = <
+//     ╒═════════════╤═════════════╤═════════════╤═════════════╤═════════════╕       ╒═════════════╤═════════════╤═════════════╤═════════════╤═════════════╕ 
+        &none         &none         &none         &none         &none                 &none         &none         &none         &none         &none 
+//     ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡       ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡ 
+			  &none         &none         &none         &none         &none                 &none         &none         &none         &none         &none
+//     ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡       ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡ 
+        &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+//     ╘═════════════╧═════════════╧═════════════╪═════════════╪═════════════╡       ╞═════════════╪═════════════╪═════════════╧═════════════╧═════════════╛ 
+		                                              &none         &none                 &none         &none
+//                                               ╘═════════════╧═════════════╛       ╘═════════════╧═════════════╛ 
         >;
 		};
 	};
