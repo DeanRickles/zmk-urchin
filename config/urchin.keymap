@@ -9,6 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+#include <dt-bindings/zmk/pointing.h>
+
 // Layer definitions
 #define BASE 0    // ALPHA
 #define SYM 1     // SYMBOL PRIMARY
@@ -167,7 +171,7 @@
 //     ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡      ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡ 
 			  &sk LALT      &sk LGUI      &sk LSHIFT    &sk LCTRL     &kp RALT             &kp STAR      &kp N4        &kp N5        &kp N6        &kp MINUS
 //     ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡      ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡ 
-        &kp DOT       &none         &kp TAB       &kp BSPC      &kp ENTER            &kp N0        &kp N1        &kp N2        &kp N3        &kp SLASH
+        &kp DOT       &none         &kp TAB       &kp BSPC      &kp ENTER            &kp N0        &kp N1        &kp N2        &kp N3        &kp UNDER
 //     ╘═════════════╧═════════════╧═════════════╪═════════════╪═════════════╡      ╞═════════════╪═════════════╪═════════════╧═════════════╧═════════════╛ 
 		                                              &none         &none                &none         &none
 //                                               ╘═════════════╧═════════════╛      ╘═════════════╧═════════════╛ 
@@ -179,11 +183,11 @@
 			label = "MOV";
       bindings = <
 //     ╒═════════════╤═════════════╤═════════════╤═════════════╤═════════════╕       ╒═════════════╤═════════════╤═════════════╤═════════════╤═════════════╕ 
-        &none         &none         &none         &none         &none                 &none         &none         &none         &none         &none 
+        &none         &none         &mmv MOVE_UP  &none         &none                 &none         &none         &none         &none         &none 
 //     ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡       ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡ 
-			  &none         &none         &none         &none         &none                 &none         &none         &none         &none         &none
+			  &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none               &none         &mkp MB1      &mkp MB2      &mkp MB       &none
 //     ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡       ╞═════════════╪═════════════╪═════════════╪═════════════╪═════════════╡ 
-        &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+        &none         &none         &none         &none         &none                 &none         &none         &none         &none         &none
 //     ╘═════════════╧═════════════╧═════════════╪═════════════╪═════════════╡       ╞═════════════╪═════════════╪═════════════╧═════════════╧═════════════╛ 
 		                                              &none         &none                 &none         &none
 //                                               ╘═════════════╧═════════════╛       ╘═════════════╧═════════════╛ 
